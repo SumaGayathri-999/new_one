@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+.root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white_para: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray_background-headings-buttons: hsl(0, 0%, 95%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(0, 0%, 95%);
+    display:flex;
+    align-items:center;
+    height:calc(100vh - 1px);
+    justify-content:center;
+    font-family:Lexend Deca;
+    /* overflow-y: visible; */
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    max-width:700px;
+    min-height:400px;
+   
+}
+#card-1{
+    background-color:hsl(31, 77%, 52%);
+    display:flex;
+    flex-direction:column;
+    padding:25px;
+    flex:1;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    min-height:400px;
+}
+#card-2{
+    display:flex;
+    flex-direction:column;
+    background-color:hsl(184, 100%, 22%);
+    padding:25px;
+    flex:1;
+    min-height:400px;
+
+}
+#card-3{
+    display:flex;
+    flex-direction:column;
+    background-color:hsl(179, 100%, 13%);
+    /* max-width:10%; */
+    padding:25px;
+    flex:1;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    min-height:400px;
+
+
+}
+h1{
+    color:hsl(0, 0%, 95%);
+    font-family:Big Shoulders Display;
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:15px;
+}
+ .details{
+    border-style:solid;
+    border-color: hsl(0, 0%, 95%);
+    background-color:hsl(0, 0%, 95%);
+    border-radius:2rem;
+    padding:7px;
+    font-size:15px;
+    width:fit-content;
+    margin-top:auto;
+    cursor:pointer;
+
+}
+#d-1{
+    color:hsl(31, 77%, 52%);
+  }
+#d-2{
+     color:hsl(184, 100%, 22%);
+ }
+#d-3{
+      color:hsl(179, 100%, 13%);
+    }
+  
+#d-1:hover,#d-2:hover,#d-3:hover{
+    color:hsl(0, 0%, 95%);
+}
+.details:hover{
+    background-color: transparent; 
+    
+}
+@media(max-width:450px)
+{
+   body{
+    height:100%;
+   }
+    .container{
+        max-width:80%;
+        display:flex;
+        flex-direction:column;
+        min-height:50%;
+    }
+    #card-1{
+        border-top-left-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    #card-3{
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}
